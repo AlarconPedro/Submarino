@@ -40,6 +40,14 @@ export const SEO = () => {
                                 Entretanto, o Googlebot vem evoluindo e hoje em dia já consegue renderizar uma página com JavaScript. 
                                 De qualquer maneira, é importante você estar atento às documentações de cada crawler, quais tecnologias são suportadas por ele, e fazendo testes constantes.
                             </p>
+                            <p>
+                                O Googlebot é o software do Google responsável por descobrir e indexar conteúdo na web. Como existem muitas páginas para indexar, 
+                                o Googlebot tem algumas limitações para economizar recursos e conseguir indexar a grande quantidade de páginas que precisa. Uma dessas limitações afeta justamente o JavaScript. 
+                                O crawler faz a requisição da página ao servidor, lê e indexa o conteúdo do HTML. 
+                                Como a execução do JavaScript para muitas páginas é uma tarefa custosa, o JavaScript da página tem sua execução agendada. Enquanto a indexação do conteúdo recebido no HTML é instantânea, qualquer mudança que o JavaScript faz na página só é percebida pelo robô do Google quando ocorre a execução, o que pode levar até uma semana. Além disso, não existe nem mesmo uma garantia de que todo o JavaScript da página será executado. 
+                                Para cada página, o bot oferece um orçamento de execução, que é consumido a cada linha de código executada. 
+                                Quando esse orçamento termina, a execução é interrompida e o bot indexa o resultado, que pode ser uma página incompleta.
+                            </p>
                         </li>
                     </ul>
                 </div>
